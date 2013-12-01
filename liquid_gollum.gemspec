@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/liquid_gollum.rb",
+    "liquid_gollum.gemspec",
     "test/helper.rb",
     "test/test_liquid_gollum.rb"
   ]
