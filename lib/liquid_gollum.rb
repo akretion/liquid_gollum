@@ -2,6 +2,7 @@ require 'gollum'
 require 'solid'
 require 'open-uri'
 require 'nokogiri'
+require 'active_support/cache'
 
 
 Precious::App.set(:liquid_cache, ActiveSupport::Cache::MemoryStore.new(expires_in: 30.minutes)) #TODO make it configurable
@@ -39,6 +40,7 @@ module Gollum
           'sub_page' => sub_page,
           'url_path' => url_path,
           'format' => format
+#          'metadata' => metadata
         },
         'params' => @params,
         'path' => @path,
@@ -107,6 +109,8 @@ module LiquidGollum
         name = page_name.split("/").last
         path = page_name[0..-(name.size+1)]
         original_page = wiki.paged(name, path, exact = true)
+        original_page.show_mode = true
+        # TODO propagate page params
         if values[1] && values[1][:render]
           current_context['render'] = true #TODO only if page format is md?
           original_content = original_page.formatted_data()
