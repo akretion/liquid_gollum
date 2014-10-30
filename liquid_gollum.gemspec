@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Rapha\u{eb}l Valyi"]
   s.date = "2013-12-01"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Makes Liquid markup available in Gollum wiki"
   s.email = "rvalyi@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
