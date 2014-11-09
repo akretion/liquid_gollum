@@ -5,7 +5,7 @@ source "http://rubygems.org"
 
 
 gem 'locomotivecms_solid'
-gem 'gollum'
+gem 'gollum', git: 'https://github.com/akretion/gollum.git', branch: 'akretion'
 
 
 # Add dependencies to develop your gem here.
