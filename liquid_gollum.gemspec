@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "Liquid Gollum: liquid in Gollum wiki"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
